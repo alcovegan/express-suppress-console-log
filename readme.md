@@ -1,5 +1,7 @@
 # express-suppress-console-log
 
+[![Build Status](https://travis-ci.org/alcovegan/express-suppress-console-log.svg?branch=master)](https://travis-ci.org/alcovegan/express-suppress-console-log)
+
 Simple lib for suppressing `console.log` outputs in your ExpressJS and other apps based on passed environments rules. Main idea is to flexible suppress console outputs in different environments. For example, you have some logging in your app, and don't want to delete or wrap every of this in check for current environment, then you can just require this lib and pass rules for every environment.
 
 ## Installation
