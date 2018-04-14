@@ -19,11 +19,15 @@ const envs = {
 };
 
 describe("Basic functionality", () => {
+	beforeEach(() => {
+  		process.env.NODE_ENV = 'some_environment_not_in_environments';
+  		lib(envs);
+	});
+
 	test("lib returns a function", () => {
 		expect(typeof lib).toBe("function");
 	});
 	test("lib not reassign default console.log when current NODE_ENV not in environments object", () => {
-		process.env.NODE_ENV = 'some_environment_not_in_environments';
 		expect(console.log.toString()).toBe("function () { [native code] }");
 	});
 });
