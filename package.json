@@ -1,0 +1,28 @@
+{
+  "name": "express-suppress-console-log",
+  "version": "1.0.0",
+  "description": "Small library for supress console.log() outputs in different environments",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "expressjs",
+    "console",
+    "logs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alcovegan/express-suppress-console-log.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alcovegan/express-suppress-console-log/issues"
+  },
+  "homepage": "https://github.com/alcovegan/express-suppress-console-log#readme",
+  "author": "Alexander Sharabarov <alcovegan@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "test-console": "^1.1.0"
+  }
+}
